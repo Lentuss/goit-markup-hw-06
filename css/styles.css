@@ -133,7 +133,7 @@ a {
     url(../images/herobg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
+  min-width: 1600px;
 
   text-align: center;
   padding: 200px 0;
