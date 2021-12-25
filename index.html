@@ -428,16 +428,51 @@
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
-        <p>Оставьте свои данные, мы вам перезвоним</p>
-        <form>
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" />
-          <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
-          <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" />
-          <label for="comment"></label>
-          <textarea id="comment"></textarea>
+        <p class="modal-call">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form class="modal-form">
+          <label for="name" class="form-field">
+            <span class="input-label">Имя</span>
+            <input type="text" name="name" id="name" />
+            <span class="modal-form-icon">
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#name" />
+              </svg>
+            </span>
+          </label>
+
+          <label for="tel" class="form-field">
+            <span class="input-label">Телефон</span>
+            <input type="tel" name="tel" id="tel" />
+            <span class="modal-form-icon">
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#telephone" />
+              </svg>
+            </span>
+          </label>
+
+          <label for="mail" class="form-field">
+            <span class="input-label">Почта</span>
+            <input type="email" name="mail" id="mail" />
+            <span class="modal-form-icon">
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#email" />
+              </svg>
+            </span>
+          </label>
+
+          <label for="comment" class="input-label">Комментарий</label>
+          <textarea class="comment-area" id="comment" placeholder="Введите текст"></textarea>
+
+          <label class="checkbox-agreement" for="agreement">
+            <input class="checkbox-hidden" type="checkbox" name="agreement" id="agreement" />
+            <span class="new-checkbox"></span>
+            <span class="agreement-label">
+              Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span
+            >
+          </label>
+
+          <button class="modal-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
