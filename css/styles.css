@@ -807,6 +807,9 @@ a {
   border: 2px solid var(--title-color);
   border-radius: 2px;
 }
+.checkbox-hidden:focus + .new-checkbox {
+  border-color: var(--brand-color);
+}
 .checkbox-hidden:checked + .new-checkbox {
   background-origin: border-box;
   background-color: var(--brand-color);
